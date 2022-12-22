@@ -1,0 +1,19 @@
+{
+  "name": "mangamil",
+  "version": "0.0.0",
+  "description": "Manga viewer",
+  "main": "main.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otchy210/mangamil.git"
+  },
+  "author": "Otchy <npm@otchy.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/otchy210/mangamil/issues"
+  },
+  "homepage": "https://github.com/otchy210/mangamil#readme"
+}
