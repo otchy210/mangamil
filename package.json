@@ -4,8 +4,13 @@
   "description": "Manga viewer",
   "main": "main.js",
   "scripts": {
-    "build": "webpack --mode production",
-    "watch": "webpack --watch --mode development",
+    "clean": "rm -rf build/",
+    "copy": "mkdir -p build/app && cp src/app/*.html build/app/",
+    "build": "npm run copy && webpack --mode production",
+    "build:dev": "npm run copy && webpack --mode development",
+    "watch": "npm run copy && webpack --watch --mode production",
+    "watch:dev": "npm run copy && webpack --watch --mode development",
+    "start": "electron build/app/main",
     "lint": "eslint --no-error-on-unmatched-pattern src/*",
     "lint:fix": "eslint --fix --no-error-on-unmatched-pattern src/*",
     "test": "jest"
@@ -24,6 +29,7 @@
     "@types/jest": "^29.2.4",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
+    "electron": "^22.0.0",
     "eslint": "^8.30.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-standard": "^17.0.0",
