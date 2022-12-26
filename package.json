@@ -1,6 +1,6 @@
 {
   "name": "mangamil",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Manga viewer",
   "main": "main.js",
   "scripts": {
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/otchy210/mangamil#readme",
   "devDependencies": {
     "@types/jest": "^29.2.4",
+    "@types/node": "^18.11.17",
     "@typescript-eslint/eslint-plugin": "^5.47.0",
     "@typescript-eslint/parser": "^5.47.0",
     "electron": "^22.0.0",
